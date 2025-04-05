@@ -2,7 +2,6 @@ if (window.top == window)
     window.location.href = "//ducdat0507.github.io";
 
 window.addEventListener("message", (e) => {
-    console.log(e);
     if (e.origin != "https://ducdat0507.github.io") return;
     let source = e.source;
     let data = e.data;
