@@ -13,6 +13,8 @@ window.addEventListener("message", (e) => {
             type: "duducat-set-local-storage",
             key: data.key,
             success: true,
+        }, {
+            targetOrigin: "https://ducdat0507.github.io"
         })
     }
 });
