@@ -6,26 +6,7 @@
     <title>ducdat0507.github.io &rarr; duducat.moe...</title>
 
     <link rel="canonical" href="https://duducat.moe">
-    <script>
-        if (window.top == window)
-            window.location.href = "//ducdat0507.github.io";
-
-        window.addEventListener("message", (e) => {
-            if (e.origin != "https://ducdat0507.github.io") return;
-            console.log(e);
-            let source = e.source;
-            let data = e.data;
-            let type = e.data?.type;
-            if (type == "duducat-set-local-storage") {
-                localStorage.setItem(data.key, data.value);
-                source.postMessage({
-                    type: "duducat-set-local-storage",
-                    key: data.key,
-                    success: true,
-                })
-            }
-        });
-    </script>
+    <script src="index.js"></script>
 </head>
 <body>
     <h1>I'm moving to a new domain!</h1>
