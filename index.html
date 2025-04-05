@@ -11,7 +11,8 @@
             window.location.href = "//ducdat0507.github.io";
 
         window.addEventListener("message", (e) => {
-            if (e.origin != "https://ducdat0507.github.io");
+            if (e.origin != "https://ducdat0507.github.io") return;
+            console.log(e);
             let source = e.source;
             let data = e.data;
             let type = e.data?.type;
